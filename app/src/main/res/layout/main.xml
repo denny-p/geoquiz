@@ -1,0 +1,86 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:background="@color/black"
+    >
+<RelativeLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GeographieQuiz" >
+
+    <TextView
+        android:id="@+id/frage"
+        android:textSize="20dp"
+		android:textColor="@color/dgrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+	<LinearLayout  
+	    android:layout_height="wrap_content"  
+	    android:layout_width="fill_parent" 
+	    android:gravity = "center_horizontal"
+	    android:layout_below="@id/frage"
+	    android:layout_marginTop="18dp"
+	    android:id="@+id/answerButtonLayout"
+		android:textColor="@color/dgrey"
+	    android:weightSum="1.0">  
+	<Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+		android:textColor="@color/black"
+        android:layout_weight="0.5"
+        />
+     
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+		android:textColor="@color/black"
+        android:layout_weight="0.5"
+        />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answerButtonLayout"
+        android:layout_below="@+id/answerButtonLayout"
+        android:textSize="25dp"
+		android:textColor="@color/dgrey"
+        android:layout_marginTop="20dp"
+         />
+
+    <TextView
+        android:id="@+id/hinweis1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/score"
+        android:layout_below="@+id/score"
+        android:layout_marginTop="5dp"
+		android:textSize="20dp"
+		android:textColor="@color/dgrey"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/hinweis2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hinweis1"
+        android:layout_below="@+id/hinweis1"
+        android:layout_marginTop="5dp"
+		android:textSize="20dp"
+		android:textColor="@color/dgrey"
+        android:text="" />
+    
+</RelativeLayout>
+</ScrollView>
